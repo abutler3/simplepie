@@ -2976,7 +2976,7 @@ class SimplePie
 
         return null;
     }
-
+    /* VUMC fork change - add typeset to function */
     /**
      * Get all items from the feed
      *
@@ -2990,7 +2990,7 @@ class SimplePie
      * @param int $end Number of items to return. 0 for all items after `$start`
      * @return \SimplePie\Item[]|null List of {@see \SimplePie\Item} objects
      */
-    public function get_items($start = 0, $end = 0)
+    public function get_items(int $start = 0, int $end = 0)
     {
         if (!isset($this->data['items'])) {
             if (!empty($this->multifeed_objects)) {
@@ -3130,7 +3130,7 @@ class SimplePie
         }
         return 0;
     }
-
+    /* VUMC fork change - add typeset to function */
     /**
      * Merge items from several feeds into one
      *
@@ -3144,7 +3144,7 @@ class SimplePie
      * @param int $limit Maximum number of items per feed
      * @return array
      */
-    public static function merge_items($urls, $start = 0, $end = 0, $limit = 0)
+    public static function merge_items(array $urls, int $start = 0, int $end = 0, int $limit = 0)
     {
         if (is_array($urls) && sizeof($urls) > 0) {
             $items = [];
