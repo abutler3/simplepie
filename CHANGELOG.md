@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.8.0](https://github.com/simplepie/simplepie/compare/1.7.0...1.8.0) - 2023-01-20
 
+## [1.8.1] - 2023-06-14
 ### Added
 
 - New method `SimplePie\SimplePie::set_cache()` for providing a PSR-16 cache implementation by @Art4 in [#742](https://github.com/simplepie/simplepie/pull/742)
